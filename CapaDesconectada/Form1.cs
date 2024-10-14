@@ -15,16 +15,17 @@ namespace CapaDesconectada
 {
     public partial class Form1 : Form
     {
-        public Form1()
-        {
-            InitializeComponent();
-        }
-
         #region No Tipado
         private CustomerRepository customerRepository = new CustomerRepository();
         private void btnObtenerNoTipado_Click(object sender, EventArgs e)
         {
             gridNoTipado.DataSource = customerRepository.ObtenerTodos();
+        }
+
+        private void btnBuscarNt_Click(object sender, EventArgs e)
+        {
+            var cliente = customerRepository.ObtenerPorId(tbxBusquedaNt.Text);
+
         }
         #endregion
 
@@ -37,5 +38,11 @@ namespace CapaDesconectada
 
         }
         #endregion
+
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
     }
 }
