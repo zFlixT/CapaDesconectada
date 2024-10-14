@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnBuscarNt = new System.Windows.Forms.Button();
+            this.tbxBusquedaNt = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnObtenerNoTipado = new System.Windows.Forms.Button();
             this.gridNoTipado = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnBuscarTipado = new System.Windows.Forms.Button();
+            this.tbxBusquedaTipado = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.btnObtenerTipado = new System.Windows.Forms.Button();
             this.gridTipado = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tbxBusquedaNt = new System.Windows.Forms.TextBox();
-            this.btnBuscarNt = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tbcBusquedaT = new System.Windows.Forms.TextBox();
-            this.btnBuscarT = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridNoTipado)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -59,6 +59,32 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "DaraSet No Tipado";
+            // 
+            // btnBuscarNt
+            // 
+            this.btnBuscarNt.Location = new System.Drawing.Point(97, 316);
+            this.btnBuscarNt.Name = "btnBuscarNt";
+            this.btnBuscarNt.Size = new System.Drawing.Size(186, 36);
+            this.btnBuscarNt.TabIndex = 5;
+            this.btnBuscarNt.Text = "Buscar Cliente";
+            this.btnBuscarNt.UseVisualStyleBackColor = true;
+            this.btnBuscarNt.Click += new System.EventHandler(this.btnBuscarNt_Click);
+            // 
+            // tbxBusquedaNt
+            // 
+            this.tbxBusquedaNt.Location = new System.Drawing.Point(119, 259);
+            this.tbxBusquedaNt.Name = "tbxBusquedaNt";
+            this.tbxBusquedaNt.Size = new System.Drawing.Size(138, 20);
+            this.tbxBusquedaNt.TabIndex = 4;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(70, 262);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(43, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Buscar ";
             // 
             // btnObtenerNoTipado
             // 
@@ -80,8 +106,8 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.btnBuscarT);
-            this.groupBox2.Controls.Add(this.tbcBusquedaT);
+            this.groupBox2.Controls.Add(this.btnBuscarTipado);
+            this.groupBox2.Controls.Add(this.tbxBusquedaTipado);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.btnObtenerTipado);
             this.groupBox2.Controls.Add(this.gridTipado);
@@ -91,6 +117,32 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "DaraSet Tipado";
+            // 
+            // btnBuscarTipado
+            // 
+            this.btnBuscarTipado.Location = new System.Drawing.Point(114, 316);
+            this.btnBuscarTipado.Name = "btnBuscarTipado";
+            this.btnBuscarTipado.Size = new System.Drawing.Size(186, 36);
+            this.btnBuscarTipado.TabIndex = 6;
+            this.btnBuscarTipado.Text = "Buscar Cliente";
+            this.btnBuscarTipado.UseVisualStyleBackColor = true;
+            this.btnBuscarTipado.Click += new System.EventHandler(this.btnBuscarTipado_Click);
+            // 
+            // tbxBusquedaTipado
+            // 
+            this.tbxBusquedaTipado.Location = new System.Drawing.Point(127, 259);
+            this.tbxBusquedaTipado.Name = "tbxBusquedaTipado";
+            this.tbxBusquedaTipado.Size = new System.Drawing.Size(145, 20);
+            this.tbxBusquedaTipado.TabIndex = 6;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(78, 262);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(43, 13);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Buscar ";
             // 
             // btnObtenerTipado
             // 
@@ -109,57 +161,6 @@
             this.gridTipado.Name = "gridTipado";
             this.gridTipado.Size = new System.Drawing.Size(364, 150);
             this.gridTipado.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(70, 262);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Buscar ";
-            // 
-            // tbxBusquedaNt
-            // 
-            this.tbxBusquedaNt.Location = new System.Drawing.Point(119, 259);
-            this.tbxBusquedaNt.Name = "tbxBusquedaNt";
-            this.tbxBusquedaNt.Size = new System.Drawing.Size(138, 20);
-            this.tbxBusquedaNt.TabIndex = 4;
-            // 
-            // btnBuscarNt
-            // 
-            this.btnBuscarNt.Location = new System.Drawing.Point(97, 316);
-            this.btnBuscarNt.Name = "btnBuscarNt";
-            this.btnBuscarNt.Size = new System.Drawing.Size(186, 36);
-            this.btnBuscarNt.TabIndex = 5;
-            this.btnBuscarNt.Text = "Buscar Cliente";
-            this.btnBuscarNt.UseVisualStyleBackColor = true;
-            this.btnBuscarNt.Click += new System.EventHandler(this.btnBuscarNt_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(78, 262);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 13);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Buscar ";
-            // 
-            // tbcBusquedaT
-            // 
-            this.tbcBusquedaT.Location = new System.Drawing.Point(127, 259);
-            this.tbcBusquedaT.Name = "tbcBusquedaT";
-            this.tbcBusquedaT.Size = new System.Drawing.Size(145, 20);
-            this.tbcBusquedaT.TabIndex = 6;
-            // 
-            // btnBuscarT
-            // 
-            this.btnBuscarT.Location = new System.Drawing.Point(114, 316);
-            this.btnBuscarT.Name = "btnBuscarT";
-            this.btnBuscarT.Size = new System.Drawing.Size(186, 36);
-            this.btnBuscarT.TabIndex = 6;
-            this.btnBuscarT.Text = "Buscar Cliente";
-            this.btnBuscarT.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -191,8 +192,8 @@
         private System.Windows.Forms.Button btnBuscarNt;
         private System.Windows.Forms.TextBox tbxBusquedaNt;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnBuscarT;
-        private System.Windows.Forms.TextBox tbcBusquedaT;
+        private System.Windows.Forms.Button btnBuscarTipado;
+        private System.Windows.Forms.TextBox tbxBusquedaTipado;
         private System.Windows.Forms.Label label2;
     }
 }
