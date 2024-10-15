@@ -52,6 +52,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.tbxAddres = new System.Windows.Forms.TextBox();
             this.btnInsertarT = new System.Windows.Forms.Button();
+            this.btnActualizarNT = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridNoTipado)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -60,6 +61,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnActualizarNT);
             this.groupBox1.Controls.Add(this.btnBuscarNt);
             this.groupBox1.Controls.Add(this.tbxBusquedaNt);
             this.groupBox1.Controls.Add(this.label1);
@@ -76,9 +78,9 @@
             // 
             this.btnBuscarNt.Location = new System.Drawing.Point(97, 316);
             this.btnBuscarNt.Name = "btnBuscarNt";
-            this.btnBuscarNt.Size = new System.Drawing.Size(186, 36);
+            this.btnBuscarNt.Size = new System.Drawing.Size(76, 36);
             this.btnBuscarNt.TabIndex = 5;
-            this.btnBuscarNt.Text = "Buscar Cliente";
+            this.btnBuscarNt.Text = "Buscar";
             this.btnBuscarNt.UseVisualStyleBackColor = true;
             this.btnBuscarNt.Click += new System.EventHandler(this.btnBuscarNt_Click);
             // 
@@ -275,6 +277,16 @@
             this.btnInsertarT.UseVisualStyleBackColor = true;
             this.btnInsertarT.Click += new System.EventHandler(this.btnInsertarT_Click);
             // 
+            // btnActualizarNT
+            // 
+            this.btnActualizarNT.Location = new System.Drawing.Point(207, 316);
+            this.btnActualizarNT.Name = "btnActualizarNT";
+            this.btnActualizarNT.Size = new System.Drawing.Size(76, 36);
+            this.btnActualizarNT.TabIndex = 8;
+            this.btnActualizarNT.Text = "Actualizar";
+            this.btnActualizarNT.UseVisualStyleBackColor = true;
+            this.btnActualizarNT.Click += new System.EventHandler(this.btnActualizarNT_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -332,6 +344,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox tbxAddres;
         private System.Windows.Forms.Button btnInsertarT;
+        private System.Windows.Forms.Button btnActualizarNT;
     }
 }
 
