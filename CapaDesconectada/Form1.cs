@@ -117,7 +117,7 @@ namespace CapaDesconectada
             {
                 var datoOriginal = customerRepository.ExtraerInfoCliente(fila);
                 var datosModificados = CrearCliente();
-                adaptador.Update(
+                /*adaptador.Update(
              datosModificados.CustomerID,
              datosModificados.CompanyName,
              datosModificados.ContactName,
@@ -141,6 +141,19 @@ namespace CapaDesconectada
              datoOriginal.Phone,
              datoOriginal.Fax
              );
+                */
+
+                var filas = adaptador.ActualizarCliente(datosModificados.CustomerID,
+             datosModificados.CompanyName,
+             datosModificados.ContactName,
+             datosModificados.ContactTitle,
+             datosModificados.Address,
+             datosModificados.City,
+             datosModificados.Region,
+             datosModificados.PostalCode,
+             datosModificados.Country,
+             datosModificados.Phone,
+             datosModificados.Fax, datoOriginal.CustomerID);
                 MessageBox.Show($"{fila} filas modificadas");
             }
         }
