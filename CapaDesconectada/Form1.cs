@@ -25,7 +25,39 @@ namespace CapaDesconectada
         private void btnBuscarNt_Click(object sender, EventArgs e)
         {
             var cliente = customerRepository.ObtenerPorId(tbxBusquedaNt.Text);
+            if (cliente == null)
+            {
+                MessageBox.Show("El objeto es null");
+            }
+            if (cliente != null)
+            {
+                var listaClientes = new List<Customer> { cliente};
+                gridNoTipado.DataSource = listaClientes;
+            }
+        }
+        private void btnInsertarCliente_Click(object sender, EventArgs e)
+        {
+            var cliente = CrearCliente();
+            int insertados = customerRepository.InsertarCliente(cliente);
+            MessageBox.Show($"{insertados} registrados");
+        }
 
+        private Customer CrearCliente()
+        {
+            var cliente = new Customer
+            {
+                CustomerID = tbxCustomerID.Text,
+                CompanyName = tbxCompanyName.Text,
+                ContactName = tbxContactName.Text,
+                ContactTitle = tbxContactTitle.Text,
+                Address = tbxAddres.Text,
+            };
+            MessageBox.Show(cliente.CustomerID);
+            MessageBox.Show(cliente.CompanyName);
+            MessageBox.Show(cliente.ContactName);
+            MessageBox.Show(cliente.ContactTitle);
+            MessageBox.Show(cliente.Address);
+            return cliente;
         }
         #endregion
 
@@ -53,6 +85,5 @@ namespace CapaDesconectada
             InitializeComponent();
         }
 
-        
     }
 }
