@@ -99,6 +99,7 @@ namespace CapaDesconectada
             if (customer != null)
             {
                 var objeto1 = customerRepository.ExtraerInfoCliente(customer);
+                RellenarForm(objeto1);
                 Console.WriteLine(customer);
             }
         }
@@ -107,6 +108,41 @@ namespace CapaDesconectada
             var cliente = CrearCliente();
             adaptador.Insert(cliente.CustomerID, cliente.CompanyName, cliente.ContactName, cliente.ContactTitle, cliente.Address, cliente.City, cliente.Region, cliente.PostalCode, cliente.Country, cliente.Phone,cliente.Fax
             );
+        }
+        private void btnActualizarT_Click(object sender, EventArgs e)
+        {
+            var fila = adaptador.GetDataByCustomerID(tbxBusquedaTipado.Text);
+
+            if (fila != null)
+            {
+                var datoOriginal = customerRepository.ExtraerInfoCliente(fila);
+                var datosModificados = CrearCliente();
+                adaptador.Update(
+             datosModificados.CustomerID,
+             datosModificados.CompanyName,
+             datosModificados.ContactName,
+             datosModificados.ContactTitle,
+             datosModificados.Address,
+             datosModificados.City,
+             datosModificados.Region,
+             datosModificados.PostalCode,
+             datosModificados.Country,
+             datosModificados.Phone,
+             datosModificados.Fax,
+             datoOriginal.CustomerID,
+             datoOriginal.CompanyName,
+             datoOriginal.ContactName,
+             datoOriginal.ContactTitle,
+             datoOriginal.Address,
+             datoOriginal.City,
+             datoOriginal.Region,
+             datoOriginal.PostalCode,
+             datoOriginal.Country,
+             datoOriginal.Phone,
+             datoOriginal.Fax
+             );
+                MessageBox.Show($"{fila} filas modificadas");
+            }
         }
         #endregion
 
