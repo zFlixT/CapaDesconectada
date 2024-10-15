@@ -83,6 +83,11 @@ namespace CapaDesconectada
             var actualizadas = customerRepository.ActualizarCliente(cliente);
             MessageBox.Show($"{actualizadas} filas actualizadas");
         }
+        private void btnEliminarClienteNt_Click(object sender, EventArgs e)
+        {
+            var eliminados = customerRepository.EliminarCliente(tbxCustomerID.Text);
+            MessageBox.Show($"{eliminados} filas eliminadas");
+        }
         #endregion
 
         #region Tipado

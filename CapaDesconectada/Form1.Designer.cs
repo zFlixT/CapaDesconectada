@@ -54,6 +54,7 @@
             this.btnInsertarT = new System.Windows.Forms.Button();
             this.btnActualizarNT = new System.Windows.Forms.Button();
             this.btnActualizarT = new System.Windows.Forms.Button();
+            this.btnEliminarClienteNt = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridNoTipado)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -62,6 +63,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnEliminarClienteNt);
             this.groupBox1.Controls.Add(this.btnActualizarNT);
             this.groupBox1.Controls.Add(this.btnBuscarNt);
             this.groupBox1.Controls.Add(this.tbxBusquedaNt);
@@ -77,7 +79,7 @@
             // 
             // btnBuscarNt
             // 
-            this.btnBuscarNt.Location = new System.Drawing.Point(97, 316);
+            this.btnBuscarNt.Location = new System.Drawing.Point(97, 301);
             this.btnBuscarNt.Name = "btnBuscarNt";
             this.btnBuscarNt.Size = new System.Drawing.Size(76, 36);
             this.btnBuscarNt.TabIndex = 5;
@@ -281,7 +283,7 @@
             // 
             // btnActualizarNT
             // 
-            this.btnActualizarNT.Location = new System.Drawing.Point(207, 316);
+            this.btnActualizarNT.Location = new System.Drawing.Point(207, 301);
             this.btnActualizarNT.Name = "btnActualizarNT";
             this.btnActualizarNT.Size = new System.Drawing.Size(76, 36);
             this.btnActualizarNT.TabIndex = 8;
@@ -291,13 +293,23 @@
             // 
             // btnActualizarT
             // 
-            this.btnActualizarT.Location = new System.Drawing.Point(237, 316);
+            this.btnActualizarT.Location = new System.Drawing.Point(221, 301);
             this.btnActualizarT.Name = "btnActualizarT";
             this.btnActualizarT.Size = new System.Drawing.Size(76, 36);
             this.btnActualizarT.TabIndex = 8;
             this.btnActualizarT.Text = "Actualizar";
             this.btnActualizarT.UseVisualStyleBackColor = true;
             this.btnActualizarT.Click += new System.EventHandler(this.btnActualizarT_Click);
+            // 
+            // btnEliminarClienteNt
+            // 
+            this.btnEliminarClienteNt.Location = new System.Drawing.Point(157, 343);
+            this.btnEliminarClienteNt.Name = "btnEliminarClienteNt";
+            this.btnEliminarClienteNt.Size = new System.Drawing.Size(76, 36);
+            this.btnEliminarClienteNt.TabIndex = 9;
+            this.btnEliminarClienteNt.Text = "Eliminar";
+            this.btnEliminarClienteNt.UseVisualStyleBackColor = true;
+            this.btnEliminarClienteNt.Click += new System.EventHandler(this.btnEliminarClienteNt_Click);
             // 
             // Form1
             // 
@@ -358,6 +370,7 @@
         private System.Windows.Forms.Button btnInsertarT;
         private System.Windows.Forms.Button btnActualizarNT;
         private System.Windows.Forms.Button btnActualizarT;
+        private System.Windows.Forms.Button btnEliminarClienteNt;
     }
 }
 
