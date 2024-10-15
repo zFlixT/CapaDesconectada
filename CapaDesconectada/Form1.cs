@@ -162,6 +162,11 @@ namespace CapaDesconectada
                 MessageBox.Show($"{fila} filas modificadas");
             }
         }
+        private void btnEliminarT_Click(object sender, EventArgs e)
+        {
+            int filasEliminadas = adaptador.EliminarCliente(tbxCustomerID.Text);
+            MessageBox.Show($"{filasEliminadas} filas eliminadas");
+        }
         #endregion
 
         public Form1()
