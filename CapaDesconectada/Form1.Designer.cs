@@ -51,6 +51,7 @@
             this.btnInsertarCliente = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.tbxAddres = new System.Windows.Forms.TextBox();
+            this.btnInsertarT = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridNoTipado)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -83,7 +84,7 @@
             // 
             // tbxBusquedaNt
             // 
-            this.tbxBusquedaNt.Location = new System.Drawing.Point(119, 259);
+            this.tbxBusquedaNt.Location = new System.Drawing.Point(145, 259);
             this.tbxBusquedaNt.Name = "tbxBusquedaNt";
             this.tbxBusquedaNt.Size = new System.Drawing.Size(138, 20);
             this.tbxBusquedaNt.TabIndex = 4;
@@ -91,7 +92,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(70, 262);
+            this.label1.Location = new System.Drawing.Point(94, 265);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 3;
@@ -117,6 +118,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btnInsertarT);
             this.groupBox2.Controls.Add(this.btnBuscarTipado);
             this.groupBox2.Controls.Add(this.tbxBusquedaTipado);
             this.groupBox2.Controls.Add(this.label2);
@@ -131,17 +133,17 @@
             // 
             // btnBuscarTipado
             // 
-            this.btnBuscarTipado.Location = new System.Drawing.Point(114, 316);
+            this.btnBuscarTipado.Location = new System.Drawing.Point(117, 316);
             this.btnBuscarTipado.Name = "btnBuscarTipado";
-            this.btnBuscarTipado.Size = new System.Drawing.Size(186, 36);
+            this.btnBuscarTipado.Size = new System.Drawing.Size(76, 36);
             this.btnBuscarTipado.TabIndex = 6;
-            this.btnBuscarTipado.Text = "Buscar Cliente";
+            this.btnBuscarTipado.Text = "Buscar ";
             this.btnBuscarTipado.UseVisualStyleBackColor = true;
             this.btnBuscarTipado.Click += new System.EventHandler(this.btnBuscarTipado_Click);
             // 
             // tbxBusquedaTipado
             // 
-            this.tbxBusquedaTipado.Location = new System.Drawing.Point(127, 259);
+            this.tbxBusquedaTipado.Location = new System.Drawing.Point(152, 258);
             this.tbxBusquedaTipado.Name = "tbxBusquedaTipado";
             this.tbxBusquedaTipado.Size = new System.Drawing.Size(145, 20);
             this.tbxBusquedaTipado.TabIndex = 6;
@@ -149,7 +151,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(78, 262);
+            this.label2.Location = new System.Drawing.Point(103, 262);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(43, 13);
             this.label2.TabIndex = 6;
@@ -263,6 +265,16 @@
             this.tbxAddres.Size = new System.Drawing.Size(145, 20);
             this.tbxAddres.TabIndex = 12;
             // 
+            // btnInsertarT
+            // 
+            this.btnInsertarT.Location = new System.Drawing.Point(221, 316);
+            this.btnInsertarT.Name = "btnInsertarT";
+            this.btnInsertarT.Size = new System.Drawing.Size(76, 36);
+            this.btnInsertarT.TabIndex = 7;
+            this.btnInsertarT.Text = "Enviar";
+            this.btnInsertarT.UseVisualStyleBackColor = true;
+            this.btnInsertarT.Click += new System.EventHandler(this.btnInsertarT_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -319,6 +331,7 @@
         private System.Windows.Forms.Button btnInsertarCliente;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox tbxAddres;
+        private System.Windows.Forms.Button btnInsertarT;
     }
 }
 

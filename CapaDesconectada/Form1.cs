@@ -35,6 +35,7 @@ namespace CapaDesconectada
                 gridNoTipado.DataSource = listaClientes;
             }
         }
+
         private void btnInsertarCliente_Click(object sender, EventArgs e)
         {
             var cliente = CrearCliente();
@@ -77,6 +78,12 @@ namespace CapaDesconectada
                 var objeto1 = customerRepository.ExtraerInfoCliente(customer);
                 Console.WriteLine(customer);
             }
+        }
+        private void btnInsertarT_Click(object sender, EventArgs e)
+        {
+            var cliente = CrearCliente();
+            adaptador.Insert(cliente.CustomerID, cliente.CompanyName, cliente.ContactName, cliente.ContactTitle, cliente.Address, cliente.City, cliente.Region, cliente.PostalCode, cliente.Country, cliente.Phone,cliente.Fax
+            );
         }
         #endregion
 
